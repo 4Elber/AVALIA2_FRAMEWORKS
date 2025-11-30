@@ -5,8 +5,8 @@ Projeto desenvolvido para a 2ª Avaliação da disciplina de **Frameworks Modern
 ## 👥 Integrantes do Grupo
 * **Elber Lucas Alves Barboza**
 * **Emanuel Estevam de Oliveira Dutra**
-* **Wesçey Rodrigo Barbosa Mafra**
-*(Adicione ou remova linhas conforme necessário)*
+* **Wesley Rodrigo Barbosa Mafra**
+
 
 ## 📝 Descrição do Sistema
 Este é um sistema web completo para gerenciamento de tarefas pessoais. O aplicativo permite que usuários se autentiquem usando suas contas do Google e realizem operações de CRUD (Criar, Ler, Atualizar e Excluir) em suas tarefas.
