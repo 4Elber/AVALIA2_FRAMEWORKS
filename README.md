@@ -5,7 +5,7 @@ Projeto desenvolvido para a 2ª Avaliação da disciplina de **Frameworks Modern
 ## 👥 Integrantes do Grupo
 * **Elber Lucas Alves Barboza**
 * **Emanuel Estevam de Oliveira Dutra**
-* **[NOME COMPLETO DO ALUNO 3]**
+* **Wesçey Rodrigo Barbosa Mafra**
 *(Adicione ou remova linhas conforme necessário)*
 
 ## 📝 Descrição do Sistema
