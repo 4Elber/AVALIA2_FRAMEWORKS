@@ -1,0 +1,95 @@
+openapi: 3.0.0
+info:
+  title: API Tarefas
+  version: 1.0.0
+  description: Documentação da API de tarefas usando Swagger (Avaliação 3)
+  contact:
+    name: Wesley Rodrigo Barbosa Mafra
+    email: wesley.mafra@unemat.br
+
+servers:
+  - url: http://localhost:5500
+    description: Servidor local
+
+tags:
+  - name: Tarefas
+    description: Endpoints para gerenciamento de tarefas
+
+paths:
+  /api/tarefas:
+    get:
+      tags:
+        - Tarefas
+      summary: Lista todas as tarefas
+      responses:
+        '200':
+          description: Lista retornada com sucesso
+
+    post:
+      tags:
+        - Tarefas
+      summary: Cria uma nova tarefa
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                titulo:
+                  type: string
+                  example: Nova tarefa
+                descricao:
+                  type: string
+                  example: Descrição da tarefa
+      responses:
+        '201':
+          description: Tarefa criada com sucesso
+        '400':
+          description: Erro ao criar tarefa
+
+  /api/tarefas/{id}:
+    put:
+      tags:
+        - Tarefas
+      summary: Atualiza uma tarefa existente
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                titulo:
+                  type: string
+                descricao:
+                  type: string
+                concluida:
+                  type: boolean
+      responses:
+        '200':
+          description: Tarefa atualizada com sucesso
+        '400':
+          description: Erro ao atualizar tarefa
+
+    delete:
+      tags:
+        - Tarefas
+      summary: Exclui uma tarefa pelo ID
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        '204':
+          description: Tarefa excluída com sucesso
+        '400':
+          description: Erro ao excluir tarefa
